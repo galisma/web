@@ -1,0 +1,3 @@
+- [ ] La barra superior se rompe en teléfono
+- [ ] Hay que copiar y pegar 6 veces
+- [ ] Añadir foto
