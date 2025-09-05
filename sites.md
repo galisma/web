@@ -59,7 +59,7 @@
 * http://colepeters.com
 * https://atmin.github.io/funponent/
 * http://blog.colepeters.com
-* http://aboutlife.com
+* http://indexlife.com
 * http://joinoneroom.com
 * http://filipaonunes.com
 * https://vakra.band
