@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galisma.com</title>
+    <title>Sobre Mí - Terminal Hacker</title>
     <link rel="stylesheet" href="../css/tachyons.min.css" />
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <style>
         .blink {
             animation: blink 1s step-end infinite;
@@ -37,6 +37,17 @@
             opacity: 0.7;
             transition: opacity 0.2s;
         }
+
+        .profile-img {
+            border: 2px solid #00ff00;
+            filter: grayscale(100%) brightness(120%);
+            transition: all 0.3s ease;
+        }
+
+        .profile-img:hover {
+            filter: grayscale(0%) brightness(100%);
+            border-color: #00cc00;
+        }
     </style>
 </head>
 
@@ -45,62 +56,82 @@
         <!-- Barra de navegación superior -->
         <nav class="flex justify-between mb4 mb5-ns">
             <nav>
-                <a href="index.html" class="link green no-underline hover-dim">EN</a>
+                <a href="en/about.html" class="link green no-underline hover-dim">EN</a>
                 /
-                <a href="../index.html" class="link green no-underline mr3 hover-dim">ES</a>
+                <a href="about.html" class="link green no-underline mr3 hover-dim">ES</a>
             </nav>
 
             <nav>
-                <a href="index.html" class="link green underline mr3 mr4-ns hover-dim">INDEX</a>
-                <a href="blog.html" class="link green no-underline mr3 mr4-ns hover-dim">BLOG</a>
-                <a href="contact.html" class="link green no-underline mr3 mr4-ns hover-dim">CONTACT</a>
-                <a href="about.html" class="link green no-underline hover-dim">ABOUT ME</a>
+                <a href="index.html" class="link green no-underline mr3 mr4-ns hover-dim">INICIO</a>
+              
+                <a href="contact.html" class="link green no-underline mr3 mr4-ns hover-dim">CONTACTO</a>
+           
             </nav>
         </nav>
 
         <header class="tc mb4">
-            <h1 class="f3 f1-ns ma0">root@galisma-serv:~# <span class="blink">_</span></h1>
-            <p class="f6 f5-ns mt2">Sistema de Información Segura - Modo Privilegiado</p>
+            <h1 class="f3 f1-ns ma0">root@galisma-serv:~/sobre-mi# <span class="blink">_</span></h1>
+            <p class="f6 f5-ns mt2">Perfil de usuario - Información del sistema</p>
         </header>
 
         <main class="lh-copy">
-            <section class="mb4">
-                <h2 class="f4 f3-ns">> access_mainframe()</h2>
-                <p class="pl3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit
-                    arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
-                </p>
-            </section>
+            <div class="flex-l flex-wrap">
+                <!-- Columna para la imagen -->
+                <div class="w-100 w-40-l pr0 pr4-l mb4 mb0-l tc">
+                    <img src="hacker.gif" alt="Foto de perfil" class="profile-img w-100 mw5 dib">
+                    <p class="f7 i mt2">> perfil_usuario.jpg [300x300px]</p>
 
-            <section class="mb4">
-                <h2 class="f4 f3-ns">> decrypt_data()</h2>
-                <p class="pl3">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur.
-                </p>
-                <ul class="list pl4">
-                    <li>> Lorem ipsum dolor sit amet</li>
-                    <li>> Consectetur adipiscing elit</li>
-                    <li>> Sed do eiusmod tempor incididunt</li>
-                </ul>
-            </section>
+                    <div class="mt4">
+                        <h3 class="f5">> estadísticas_sistema</h3>
+                        <ul class="list pl0">
+                            <li>> Nivel de seguridad: 97%</li>
+                            <li>> Experiencia: 8.4/10</li>
+                            <li>> Proyectos completados: 1</li>
+                            <li>> Tasa de éxito: 8.7%</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <section class="mb4">
-                <h2 class="f4 f3-ns">> bypass_security()</h2>
-                <p class="pl3">
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                    laudantium.
-                </p>
-            </section>
+                <!-- Columna para la información -->
+                <div class="w-100 w-60-l">
+                    <section class="mb4">
+                        <h2 class="f4 f3-ns">> quien_soy</h2>
+                        <p class="pl3">
+                            Soy Ismael (a.k.a Galisma), Soy estudiante de informática, trato de aprender por mi cuenta
+                            en mis tiempos libres. Quiero contribuir al software libre en cuanto este preparado. <br> Uso arch btw.
+                        </p>
+                    </section>
+
+                    <section class="mb4">
+                        <h2 class="f4 f3-ns">> habilidades</h2>
+                        <p class="pl3">Habilidades técnicas y competencias:</p>
+                        <ul class="list pl4">
+                            <li>> Decente: C++</li>
+                            <li>> Meh: Javascript, Python, C, Java.</li>
+                            <li>> Pendiente: Haskell, Rust</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb4">
+                        <h2 class="f4 f3-ns">> linea_tiempo_experiencia</h2>
+                        <p class="pl3">Historial academico:</p>
+                        <ul class="list pl4">
+                            <li>> 2021-2023: FP Sistemas Informaticos y Redes</li>
+                            <li>> 2023-Actual: FP Desarollo de Apliaciones Web</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </main>
 
         <footer class="mt5 pt4 bt b--green tc">
             <p class="f7 f6-ns">Sistema seguro // Conexión encriptada // [10.0.0.78]</p>
-            <p class="f7">> <a href="#" class="green no-underline underline-hover hover-dim">init_sequence</a> · <a
-                    href="#" class="green no-underline underline-hover hover-dim">logout</a> · <a href="#"
-                    class="green no-underline underline-hover hover-dim">shutdown</a></p>
+            <p class="f7">
+                <a href="#" class="green no-underline underline-hover hover-dim">init_sequence</a> ·
+                <a href="#" class="green no-underline underline-hover hover-dim">logout</a> ·
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+                    class="green no-underline underline-hover hover-dim">shutdown</a>
+            </p>
         </footer>
     </div>
 </body>
