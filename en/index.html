@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí - Terminal Hacker</title>
+        <!-- Open Graph protocol -->
+    <meta property="og:title" content="Galisma.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://galisma.com" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/galisma/web/refs/heads/main/preview.png" />
+    <meta property="og:description" content="Personal website"/>
+    <title>Galisma.com</title>
     <link rel="stylesheet" href="../css/tachyons.min.css" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <style>
@@ -39,85 +45,78 @@
         }
 
         .profile-img {
-            border: 2px solid #00ff00;
-            filter: grayscale(100%) brightness(120%);
+            border: 2px solid green;
             transition: all 0.3s ease;
-        }
-
-        .profile-img:hover {
-            filter: grayscale(0%) brightness(100%);
-            border-color: #00cc00;
         }
     </style>
 </head>
 
 <body class="bg-black green">
     <div class="vw-100 vh-100 pa3 pa5-ns terminal-text">
-        <!-- Barra de navegación superior -->
+        <!-- Top navigation bar -->
         <nav class="flex justify-between mb4 mb5-ns">
             <nav>
-                <a href="en/index.html" class="link green no-underline hover-dim">EN</a>
+                <a href="index.html" class="link green no-underline hover-dim">EN</a>
                 /
-                <a href="index.html" class="link green no-underline mr3 hover-dim">ES</a>
+                <a href="../index.html" class="link green no-underline hover-dim">ES</a>
             </nav>
 
             <nav>
-                <a href="index.html" class="link green no-underline mr3 mr4-ns hover-dim">INICIO</a>
-              
-                <a href="contact.html" class="link green no-underline mr3 mr4-ns hover-dim">CONTACTO</a>
-           
+                <a href="index.html" class="link green no-underline mr3 mr4-ns hover-dim">HOME</a>
+                <a href="contact.html" class="link green no-underline mr3 mr4-ns hover-dim">CONTACT</a>
             </nav>
         </nav>
 
         <header class="tc mb4">
-            <h1 class="f3 f1-ns ma0">root@galisma-serv:~/sobre-mi# <span class="blink">_</span></h1>
-            <p class="f6 f5-ns mt2">Perfil de usuario - Información del sistema</p>
+            <h1 class="f3 f1-ns ma0">root@galisma-serv:~/home# <span class="blink">_</span></h1>
+            <p class="f6 f5-ns mt2">User profile - System information</p>
         </header>
 
         <main class="lh-copy">
             <div class="flex-l flex-wrap">
-                <!-- Columna para la imagen -->
+                <!-- Column for image -->
                 <div class="w-100 w-40-l pr0 pr4-l mb4 mb0-l tc">
-                    <img src="hacker.gif" alt="Foto de perfil" class="profile-img w-100 mw5 dib">
-                    <p class="f7 i mt2">> perfil_usuario.jpg [300x300px]</p>
+                    <img src="../hacker.gif" alt="Profile picture" class="w-100 mw5 dib ba b--green bw1">
+                    <p class="f7 i mt2">> profile_user.jpg [300x300px]</p>
 
                     <div class="mt4">
-                        <h3 class="f5">> estadísticas_sistema</h3>
+                        <h3 class="f5">> system_statistics</h3>
                         <ul class="list pl0">
-                            <li>> Nivel de seguridad: 97%</li>
-                            <li>> Experiencia: 8.4/10</li>
-                            <li>> Proyectos completados: 1</li>
-                            <li>> Tasa de éxito: 8.7%</li>
+                            <li>> Security level: 97%</li>
+                            <li>> Experience: 8.4/10</li>
+                            <li>> Completed projects: 1</li>
+                            <li>> Success rate: 8.7%</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Columna para la información -->
+                <!-- Column for information -->
                 <div class="w-100 w-60-l">
                     <section class="mb4">
-                        <h2 class="f4 f3-ns">> quien_soy</h2>
+                        <h2 class="f4 f3-ns">> who_am_i</h2>
                         <p class="pl3">
-                            Soy Ismael (a.k.a Galisma), Soy estudiante de informática, trato de aprender por mi cuenta
-                            en mis tiempos libres. Quiero contribuir al software libre en cuanto este preparado. <br> Uso arch btw.
+                            I'm Ismael (a.k.a Galisma), I'm a computer science student, I try to learn on my own in my
+                            free time.
+                            I want to contribute to free software when I'm ready. <br> I use arch btw.
                         </p>
                     </section>
 
                     <section class="mb4">
-                        <h2 class="f4 f3-ns">> habilidades</h2>
-                        <p class="pl3">Habilidades técnicas y competencias:</p>
+                        <h2 class="f4 f3-ns">> skills</h2>
+                        <p class="pl3">Technical skills and competencies:</p>
                         <ul class="list pl4">
-                            <li>> Decente: C++</li>
+                            <li>> Decent: C++</li>
                             <li>> Meh: Javascript, Python, C, Java.</li>
-                            <li>> Pendiente: Haskell, Rust</li>
+                            <li>> Pending: Haskell, Rust</li>
                         </ul>
                     </section>
 
                     <section class="mb4">
-                        <h2 class="f4 f3-ns">> linea_tiempo_experiencia</h2>
-                        <p class="pl3">Historial academico:</p>
+                        <h2 class="f4 f3-ns">> experience_timeline</h2>
+                        <p class="pl3">Academic history:</p>
                         <ul class="list pl4">
-                            <li>> 2021-2023: FP Sistemas Informaticos y Redes</li>
-                            <li>> 2023-Actual: FP Desarollo de Apliaciones Web</li>
+                            <li>> 2021-2023: Vocational Training in Computer Systems and Networks</li>
+                            <li>> 2023-Current: Vocational Training in Web Application Development</li>
                         </ul>
                     </section>
                 </div>
@@ -125,7 +124,7 @@
         </main>
 
         <footer class="mt5 pt4 bt b--green tc">
-            <p class="f7 f6-ns">Sistema seguro // Conexión encriptada // [10.0.0.78]</p>
+            <p class="f7 f6-ns">Secure system // Encrypted connection // [10.0.0.78]</p>
             <p class="f7">
                 <a href="#" class="green no-underline underline-hover hover-dim">init_sequence</a> ·
                 <a href="#" class="green no-underline underline-hover hover-dim">logout</a> ·

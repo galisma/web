@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Galisma.com</title>
-    <link rel="stylesheet" href="css/tachyons.min.css" />
+    <title>Contact - Galisma.com</title>
+    <link rel="stylesheet" href="../css/tachyons.min.css" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <style>
         .blink {
@@ -38,89 +38,58 @@
             transition: opacity 0.2s;
         }
 
-        input,
-        textarea {
-            background: transparent;
-            border: 1px solid #00ff00;
-            color: #00ff00;
+        /* Footer adjustment */
+        .footer-container {
+            margin-top: auto;
         }
     </style>
 </head>
 
 <body class="bg-black green">
-    <div class="vw-100 vh-100 pa3 pa5-ns terminal-text">
-        <!-- Barra de navegación superior -->
-          <nav class="flex justify-between mb4 mb5-ns">
+    <div class="vw-100 vh-100 pa3 pa5-ns terminal-text flex flex-column">
+        <!-- Top navigation bar -->
+        <nav class="flex justify-between mb4 mb5-ns">
             <nav>
-                <a href="en/contact.html" class="link green no-underline hover-dim">EN</a>
+                <a href="contact.html" class="link green no-underline mr3 hover-dim">EN</a>
                 /
-                <a href="contact.html" class="link green no-underline mr3 hover-dim">ES</a>
+                <a href="../contact.html" class="link green no-underline hover-dim">ES</a>
             </nav>
 
             <nav>
-                <a href="index.html" class="link green no-underline mr3 mr4-ns hover-dim">INICIO</a>
-                <a href="contact.html" class="link green underline mr3 mr4-ns hover-dim">CONTACTO</a>
-        
+                <a href="index.html" class="link green no-underline mr3 mr4-ns hover-dim">HOME</a>
+                <a href="contact.html" class="link green underline mr3 mr4-ns hover-dim">CONTACT</a>
             </nav>
         </nav>
 
-        <header class="tc mb4">
-            <h1 class="f3 f1-ns ma0">root@galisma-serv:~/contact# <span class="blink">_</span></h1>
-            <p class="f6 f5-ns mt2">Establecer conexión segura - Canal encriptado</p>
-        </header>
+        <!-- Main content -->
+        <div class="flex-grow-1 flex flex-column">
+            <header class="tc mb2 mt3">
+                <h1 class="f3 f1-ns ma0">root@galisma-serv:~/contact# <span class="blink">_</span></h1>
+                <p class="f6 f5-ns mt2">Available connections - Select a channel</p>
+            </header>
 
-        <main class="lh-copy">
-            <section class="mb5">
-                <h2 class="f4 f3-ns">> initiate_secure_connection()</h2>
-                <p class="pl3">
-                    Complete el siguiente formulario para establecer una conexión segura. Todos los campos son
-                    obligatorios para el protocolo de encriptación.
-                </p>
-
-                <form class="pl3 mt3">
-                    <div class="mb3">
-                        <label for="name" class="db mb2">> Nombre de usuario:</label>
-                        <input type="text" id="name" name="name" class="pa2 w-100 mw6" required>
+            <!-- Contact content centered -->
+            <main class="lh-copy center mw6">
+                <!-- Social networks -->
+                <section class="mb4 tc">
+                    <h2 class="f4 f3-ns">> Networks and contacts</h2>
+                    <div>
+                        <p>> Email: <a href="mailto:igallomunoz@gmail.com"
+                                class="link green no-underline hover-dim">igallomunoz@gmail.com</a></p>
+                        <p>> GitHub: <a href="https://github.com/galisma" target="_blank"
+                                class="link green no-underline hover-dim">github.com/Galisma</a></p>
+                        <p>> Matrix: <a href="https://matrix.to/#/@galisma:matrix.org" target="_blank"
+                                class="link green no-underline hover-dim">@galisma:matrix.org</a></p>
+                        <p>> Discord: <a href="https://discordapp.com/users/465130338633646081" target="_blank"
+                                class="link green no-underline hover-dim">Galisma</a></p>
                     </div>
+                </section>
+            </main>
+        </div>
 
-                    <div class="mb3">
-                        <label for="email" class="db mb2">> Dirección de correo seguro:</label>
-                        <input type="email" id="email" name="email" class="pa2 w-100 mw6" required>
-                    </div>
-
-                    <div class="mb3">
-                        <label for="subject" class="db mb2">> Asunto (nivel de prioridad):</label>
-                        <input type="text" id="subject" name="subject" class="pa2 w-100 mw6" required>
-                    </div>
-
-                    <div class="mb3">
-                        <label for="message" class="db mb2">> Mensaje encriptado:</label>
-                        <textarea id="message" name="message" rows="5" class="pa2 w-100 mw6" required></textarea>
-                    </div>
-
-                    <button type="submit" class="bg-black green pa2 ph3 bn mt2 dim pointer"
-                        style="border: 1px solid #00ff00">
-                        > Enviar mensaje seguro
-                    </button>
-                </form>
-            </section>
-
-            <section class="mb4">
-                <h2 class="f4 f3-ns">> alternative_channels()</h2>
-                <p class="pl3">
-                    Si prefiere métodos de contacto alternativos, utilice los siguientes canales:
-                </p>
-                <ul class="list pl4">
-                    <li>> Email seguro: contact@galisma-serv.com</li>
-                    <li>> IRC: irc.hacker-network.com #terminal-secure</li>
-                    <li>> GPG Key: 0x1A2B3C4D5E6F7890</li>
-                    <li>> Coordenadas: 40.7128° N, 74.0060° W (solo emergencias)</li>
-                </ul>
-            </section>
-        </main>
-
-     <footer class="mt5 pt4 bt b--green tc">
-            <p class="f7 f6-ns">Sistema seguro // Conexión encriptada // [10.0.0.78]</p>
+        <!-- Footer with automatic top margin -->
+        <footer class="footer-container pt4 bt b--green tc">
+            <p class="f7 f6-ns">Secure system // Encrypted connection // [10.0.0.78]</p>
             <p class="f7">
                 <a href="#" class="green no-underline underline-hover hover-dim">init_sequence</a> ·
                 <a href="#" class="green no-underline underline-hover hover-dim">logout</a> ·
